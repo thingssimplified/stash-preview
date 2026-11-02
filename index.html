@@ -27,7 +27,7 @@ label{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:
 </main>
 <script>
 (() => {
-  const M = {"iter":600000,"salt":"uKOCI8dGCG0Zm4y9mPUSIA==","page":{"file":"e76c265a489fe.bin","assets":[{"file":"028d1c74fa75b.bin","type":"image/svg+xml"},{"file":"102d6318b696c.bin","type":"image/jpeg"},{"file":"24951443f10c2.bin","type":"image/jpeg"},{"file":"3948f6a856a80.bin","type":"image/jpeg"},{"file":"445aee1bd46a9.bin","type":"image/jpeg"},{"file":"59b52f78216b2.bin","type":"image/svg+xml"},{"file":"6791ed4ad084e.bin","type":"image/jpeg"},{"file":"78cf05cc57516.bin","type":"image/svg+xml"},{"file":"88a4bd5cbbd0a.bin","type":"image/jpeg"},{"file":"928a3c6e160d8.bin","type":"image/svg+xml"},{"file":"ab83e51076514.bin","type":"image/jpeg"},{"file":"be65ee0330bc2.bin","type":"image/svg+xml"},{"file":"c4ea4795a9837.bin","type":"image/png"},{"file":"dfcdae06d5123.bin","type":"image/png"}]}};
+  const M = {"iter":600000,"salt":"uKOCI8dGCG0Zm4y9mPUSIA==","page":{"file":"g00ef6ed087ca.bin","assets":[{"file":"226619f4bc685.bin","type":"image/svg+xml"},{"file":"35dce5e560dad.bin","type":"image/jpeg"},{"file":"41c62b3e6dfc8.bin","type":"image/jpeg"},{"file":"5ed69c81cef34.bin","type":"image/jpeg"},{"file":"63eae1a85bf16.bin","type":"image/jpeg"},{"file":"79471179217e8.bin","type":"image/svg+xml"},{"file":"811d8c5716c08.bin","type":"image/jpeg"},{"file":"938988c2e8342.bin","type":"image/svg+xml"},{"file":"aeedffedaba74.bin","type":"image/jpeg"},{"file":"bda7e1b7fe692.bin","type":"image/svg+xml"},{"file":"c84abf362bd4d.bin","type":"image/jpeg"},{"file":"d0f4d3dc92378.bin","type":"image/svg+xml"},{"file":"e2766340acd7d.bin","type":"image/png"},{"file":"fc84c7091fa70.bin","type":"image/png"}]}};
   const K = 'stash-preview-key';
   const u8 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
   // Start downloading the locked files straight away, while the password is typed.
@@ -49,6 +49,8 @@ label{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:
     for (const at of [...doc.documentElement.attributes]) root.setAttribute(at.name, at.value);
     document.head.replaceWith(document.adoptNode(doc.head));
     document.body.replaceWith(document.adoptNode(doc.body));
+    // The site's pages may not declare their own viewport; keep the phone layout after the swap.
+    if (!document.querySelector('meta[name=viewport]')) { const v = document.createElement('meta'); v.name = 'viewport'; v.content = 'width=device-width, initial-scale=1'; document.head.prepend(v); }
     // Parsed scripts never run; replace each with a fresh copy, in document order, so it runs once.
     for (const old of [...document.querySelectorAll('script')]) {
       const s = document.createElement('script');

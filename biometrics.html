@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>STASH</title>
+<script>try{if(sessionStorage.getItem('stash-preview-key')||localStorage.getItem('stash-preview-key'))document.documentElement.className='auto'}catch(e){}</script>
+<style>
+:root{--ink:#131c43;--muted:#6b6880;--violet:#6d28d9;--line:#e6e2f0;--paper:#fff;--err:#b42318}
+@media (prefers-color-scheme:dark){:root{--ink:#f1eff8;--muted:#a9a5bd;--line:#2c2840;--paper:#0f0d17;--err:#ff8a7a}}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;display:grid;place-items:center;padding:24px 16px}
+main{width:100%;max-width:340px;text-align:center}
+.logo{width:132px;height:auto;fill:currentColor;display:block;margin:0 auto 32px}
+p{color:var(--muted);margin:0 0 20px;font-size:16px}
+input[type=password]{width:100%;height:52px;border-radius:26px;border:1.5px solid var(--line);background:transparent;color:inherit;font:inherit;font-size:17px;padding:0 22px;outline:none}
+input[type=password]:focus{border-color:var(--violet)}
+button{margin-top:12px;width:100%;height:52px;border:0;border-radius:26px;background:var(--violet);color:#fff;font:inherit;font-size:17px;font-weight:600;cursor:pointer}
+button:disabled{opacity:.6;cursor:default}
+label{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:16px;color:var(--muted);font-size:14px}
+.err{color:var(--err);min-height:20px;margin:12px 0 0;font-size:14px}
+.auto main{visibility:hidden}
+</style></head><body><main>
+<svg class="logo" aria-label="STASH" role="img" viewBox="62 33 504 138"><path d="M301.4 35.54C297.13 36.16 291.42 38.4 287.28 41.09C282.43 44.24 276.93 51.85 273.68 59.9C273.37 60.67 272.66 62.37 272.1 63.69C271.54 65.01 270.46 67.8 269.7 69.89C268.94 71.98 267.93 74.65 267.44 75.81C265.24 81.04 263.15 86.22 262.66 87.65C262.36 88.5 261.28 91.54 260.26 94.41C258.55 99.16 255.8 107.64 253.61 114.84C253.13 116.39 252.45 118.61 252.1 119.77C249.39 128.54 248.47 132.27 248.01 136.26C246.74 147.38 248.86 156.33 254 161.55C258.52 166.14 264.06 168.36 270.97 168.37C277.16 168.37 281.37 166.75 285.21 162.88C289.07 159 290.71 154.79 291.52 146.69C292.51 136.83 293.37 134.64 297.09 132.58C298.5 131.8 298.77 131.75 301.83 131.75C305.66 131.75 307.03 132.25 309.2 134.47C311.12 136.44 311.65 138.25 311.98 143.96C312.55 153.66 313.91 157.65 318.13 161.98C322.09 166.03 327.21 168 333.81 167.99C342.53 167.98 348.69 164.92 352.77 158.55C357.37 151.39 357.5 142.36 353.38 117.66C349.99 97.34 344.48 75.42 339.52 62.56C337.82 58.17 334.24 51.08 332.32 48.33C326.47 39.95 316.69 35.12 305.82 35.26C304.32 35.28 302.33 35.41 301.4 35.54ZM305.49 81.52C308.26 82.93 309.87 86.14 311.28 93.07C312.46 98.83 312.18 101.42 310.08 104.33C308.5 106.52 306.69 107.23 302.67 107.23C299.69 107.23 299.31 107.17 297.88 106.45C294.22 104.6 293.91 102.68 295.89 94.38C297.71 86.77 299.75 82.77 302.53 81.32C303.65 80.74 304.02 80.77 305.49 81.52Z" fill-rule="evenodd"/><path d="M112.16 34.96C100.69 35.89 90.03 39.45 81.12 45.32C75.07 49.31 69.6 56.02 67.13 62.52C64.83 68.52 64.16 76.98 65.52 82.85C66.91 88.88 69.47 93.41 74.09 98.04C80.43 104.39 86.97 107.17 103.02 110.33C111.05 111.91 112.92 112.42 115.91 113.85C120.78 116.16 122.18 119.63 119.48 122.7C118.33 124.01 116.77 124.39 113.36 124.21C109.79 124.02 106.44 122.82 101.53 119.96C93.6 115.35 91.1 114.54 85.39 114.77C81.39 114.94 79.08 115.54 76.09 117.17C70.77 120.09 67.1 124.69 65.34 130.62C64.31 134.1 64.38 141.67 65.47 145.22C68.35 154.58 75.77 161.23 88.14 165.53C102.35 170.46 122.87 170.65 137.92 166C151.85 161.69 161.9 153.67 167.43 142.46C172.31 132.57 172.29 117.95 167.38 108.17C162.18 97.81 151.36 89.99 136.68 85.97C134.9 85.49 132.36 84.78 131.05 84.41C129.73 84.04 126.87 83.33 124.7 82.85C114.81 80.63 111.32 78.85 111.32 76.02C111.32 74.99 113.02 73.13 114.37 72.67C117.32 71.67 121.19 72.41 129.86 75.62C137.4 78.42 143.88 78.53 149.29 75.96C151.89 74.73 153.25 73.61 154.97 71.3C156.81 68.84 157.35 67.7 158.25 64.39C159.54 59.64 158.92 54.53 156.47 49.74C151.12 39.27 133.11 33.26 112.16 34.96Z" fill-rule="evenodd"/><path d="M475.24 36.64C464.87 38.98 459.71 45.61 458.85 57.68C458.59 61.38 458.66 107.59 458.94 111.85C459.02 113.15 458.64 133.83 460.09 145.66C461.54 157.48 467.24 165.74 478.44 166.43C487.89 167.15 498.58 162.26 501.2 152.46C502.13 148.98 502.2 148.18 502.46 138.23C502.71 128.61 502.89 127.59 504.7 125.4C508.27 121.07 515.78 122.07 517.99 127.17C518.75 128.93 518.83 131.56 518.44 141.9C518.11 150.5 518.4 152.38 520.85 157.51C524.72 165.59 534.54 169.67 545.4 167.71C555.9 165.81 562.03 158.43 563.48 145.93C564.02 141.27 564.15 62.3 563.62 58.43C562.62 51.13 559.66 44.65 555.93 41.64C552.5 38.85 550.26 37.81 545.52 36.76C533.86 34.18 523.3 39.61 520 49.88C518.58 54.29 518.26 58.05 518.58 66.71C519.03 79.15 517.99 82.17 512.63 83.99C508.72 85.3 503.73 83.79 502.13 80.8C501.43 79.49 501.4 78.16 501.67 61.72C501.8 53.47 501.5 51.49 499.53 47.49C497.31 42.96 494.28 40.05 489.86 38.2C484.84 36.09 479.98 35.57 475.24 36.64Z" fill-rule="evenodd"/><path d="M232.98 37.09C232.85 37.22 221.38 37.34 207.47 37.36L182.2 37.39L179.24 38.16C171.28 40.25 166.37 45.02 164.01 52.97C162.78 57.11 162.51 59.34 162.7 63.97C163.11 74.18 167.33 81.01 175.01 83.95C178.04 85.1 179.87 85.39 185.89 85.66C191.69 85.92 193.17 86.35 194.34 88.12C195.83 90.37 195.58 92.15 191.59 107.37C190.5 111.5 189.57 115.39 188.66 119.49C188.27 121.27 187.77 123.43 187.55 124.29C186.22 129.45 185.71 142.37 186.67 146.81C187.43 150.31 189.25 155.41 190.59 157.77C191.92 160.1 195.36 163.61 197.31 164.6C205.7 168.88 214.68 169.38 223.16 166.04C226.7 164.64 228.66 163.34 231.29 160.65C235.59 156.24 237.43 152.56 238.6 145.98C239.88 138.82 239.47 128.3 237.68 122.29C237.43 121.45 236.94 119.43 236.58 117.8C235.93 114.79 235.45 112.89 233.35 105.13C229.81 91.98 230.01 88.32 234.38 86.32C235.7 85.71 236.64 85.57 241.6 85.23C251.55 84.56 256.38 82.53 260.57 77.27C264.19 72.73 266.58 64.88 266.22 58.75C265.48 46.35 260.06 39.52 249.41 37.59C246.73 37.1 233.35 36.69 232.98 37.09Z" fill-rule="evenodd"/><path d="M403.56 35.11C403.02 35.17 401.18 35.36 399.48 35.52C384.34 36.98 371.31 44.32 363.67 55.69C361.81 58.46 360.44 61.37 359.19 65.19C357.78 69.51 357.54 71.55 357.7 77.96C357.84 83.14 357.91 83.78 358.71 86.53C359.88 90.55 360.91 92.72 362.92 95.4C368.66 103.03 374.34 106.1 389.9 109.95C404.32 113.52 408.12 115.91 407.74 121.18C407.53 124.02 405.4 125.65 402.33 125.33C399.47 125.02 396.13 123.34 390.9 119.54C386.17 116.12 383.03 115 378.17 114.99C369.73 114.97 363.49 119.86 360.57 128.79C359.36 132.5 359.24 138.14 360.29 141.72C362.18 148.12 364.05 151.33 368.38 155.62C376.24 163.39 387.14 167.81 401.05 168.85C412.2 169.69 425.18 167.22 433.3 162.71C439.38 159.32 443.9 155.56 447.27 151.08C452.81 143.71 455.11 136.74 455.33 126.68C455.51 118.73 454.79 114.43 452.5 109.74C450.6 105.85 449.32 103.92 446.86 101.28C441.25 95.22 429.4 89.07 416.55 85.53C413.77 84.77 407.58 82.62 406.04 81.89C404.57 81.19 402.79 79.17 402.56 77.95C402.29 76.47 402.63 75.53 403.86 74.35C405.11 73.17 406.41 72.71 408.54 72.71C411.58 72.71 412.73 73.16 421.72 77.92C430.07 82.33 435.71 82.8 442.09 79.59C444.63 78.3 446.06 77.09 447.68 74.82C453.32 66.92 452.46 55.46 445.65 47.94C440.14 41.84 428.76 37.02 416.39 35.53C413.84 35.23 405.06 34.94 403.56 35.11Z" fill-rule="evenodd"/></svg>
+<p>private preview</p>
+<form id="f"><input id="pw" type="password" autocomplete="current-password" placeholder="password" aria-label="password" required autofocus>
+<button id="go" type="submit">open</button>
+<label><input id="keep" type="checkbox"> remember this device</label>
+<p class="err" id="err" role="alert"></p></form>
+</main>
+<script>
+(() => {
+  const M = {"iter":600000,"salt":"uKOCI8dGCG0Zm4y9mPUSIA==","page":{"file":"1b30c324413b3.bin","assets":[]}};
+  const K = 'stash-preview-key';
+  const u8 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+  // Start downloading the locked files straight away, while the password is typed.
+  const get = (f) => fetch('p/' + f).then((r) => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); });
+  const pageBytes = get(M.page.file);
+  const assetBytes = M.page.assets.map((a) => get(a.file));
+  pageBytes.catch(() => {}); assetBytes.forEach((p) => p.catch(() => {}));
+  const open = (k, buf) => crypto.subtle.decrypt({ name: 'AES-GCM', iv: new Uint8Array(buf, 0, 12) }, k, new Uint8Array(buf, 12));
+  async function unlock(raw) {
+    const k = await crypto.subtle.importKey('raw', raw, 'AES-GCM', false, ['decrypt']);
+    const gz = await open(k, await pageBytes);
+    let html = await new Response(new Blob([gz]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+    const urls = await Promise.all(M.page.assets.map(async (a, i) =>
+      URL.createObjectURL(new Blob([await open(k, await assetBytes[i])], { type: a.type }))));
+    urls.forEach((url, i) => { html = html.split('stash-asset-' + i + '-').join(url); });
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const root = document.documentElement;
+    for (const at of [...root.attributes]) root.removeAttribute(at.name);
+    for (const at of [...doc.documentElement.attributes]) root.setAttribute(at.name, at.value);
+    document.head.replaceWith(document.adoptNode(doc.head));
+    document.body.replaceWith(document.adoptNode(doc.body));
+    // The site's pages may not declare their own viewport; keep the phone layout after the swap.
+    if (!document.querySelector('meta[name=viewport]')) { const v = document.createElement('meta'); v.name = 'viewport'; v.content = 'width=device-width, initial-scale=1'; document.head.prepend(v); }
+    // Parsed scripts never run; replace each with a fresh copy, in document order, so it runs once.
+    for (const old of [...document.querySelectorAll('script')]) {
+      const s = document.createElement('script');
+      for (const at of [...old.attributes]) s.setAttribute(at.name, at.value);
+      s.textContent = old.textContent;
+      old.replaceWith(s);
+    }
+    if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    else scrollTo(0, 0);
+  }
+  async function derive(pw) {
+    const b = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    const k = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: u8(M.salt), iterations: M.iter, hash: 'SHA-256' }, b, { name: 'AES-GCM', length: 256 }, true, ['decrypt']);
+    return new Uint8Array(await crypto.subtle.exportKey('raw', k));
+  }
+  const forget = () => { try { sessionStorage.removeItem(K); localStorage.removeItem(K); } catch (e) {} };
+  let saved = null; try { saved = sessionStorage.getItem(K) || localStorage.getItem(K); } catch (e) {}
+  if (saved) unlock(u8(saved)).catch(() => { forget(); document.documentElement.className = ''; });
+  const f = document.getElementById('f');
+  f.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const go = document.getElementById('go'), err = document.getElementById('err');
+    go.disabled = true; go.textContent = 'opening…'; err.textContent = '';
+    let raw;
+    try { raw = await derive(document.getElementById('pw').value); } catch (x) { raw = null; }
+    const s = raw && btoa(String.fromCharCode(...raw));
+    const keep = document.getElementById('keep').checked;
+    try {
+      await unlock(raw);
+      try { sessionStorage.setItem(K, s); if (keep) localStorage.setItem(K, s); } catch (x) {}
+    } catch (x) {
+      go.disabled = false; go.textContent = 'open';
+      err.textContent = x && x.name === 'OperationError' ? 'that password didn’t work' : 'couldn’t load the site, check your connection';
+    }
+  });
+})();
+</script></body></html>

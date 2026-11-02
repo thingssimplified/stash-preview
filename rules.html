@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><title>STASH official rules</title>
+<meta name="robots" content="noindex, nofollow"><title>STASH</title>
 <script>try{if(sessionStorage.getItem('stash-preview-key')||localStorage.getItem('stash-preview-key'))document.documentElement.className='auto'}catch(e){}</script>
 <style>
 :root{--ink:#131c43;--muted:#6b6880;--violet:#6d28d9;--line:#e6e2f0;--paper:#fff;--err:#b42318}
@@ -27,7 +27,7 @@ label{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:
 </main>
 <script>
 (() => {
-  const M = {"iter":600000,"salt":"uKOCI8dGCG0Zm4y9mPUSIA==","page":{"file":"fe2bf23fca337.bin","assets":[]}};
+  const M = {"iter":600000,"salt":"uKOCI8dGCG0Zm4y9mPUSIA==","page":{"file":"id0463e382614.bin","assets":[]}};
   const K = 'stash-preview-key';
   const u8 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
   // Start downloading the locked files straight away, while the password is typed.
@@ -49,6 +49,8 @@ label{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:
     for (const at of [...doc.documentElement.attributes]) root.setAttribute(at.name, at.value);
     document.head.replaceWith(document.adoptNode(doc.head));
     document.body.replaceWith(document.adoptNode(doc.body));
+    // The site's pages may not declare their own viewport; keep the phone layout after the swap.
+    if (!document.querySelector('meta[name=viewport]')) { const v = document.createElement('meta'); v.name = 'viewport'; v.content = 'width=device-width, initial-scale=1'; document.head.prepend(v); }
     // Parsed scripts never run; replace each with a fresh copy, in document order, so it runs once.
     for (const old of [...document.querySelectorAll('script')]) {
       const s = document.createElement('script');
